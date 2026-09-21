@@ -1,0 +1,29 @@
+# Visual Studio
+.vs/
+*.vsidx
+*.vscache
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.cache
+
+# NuGet
+packages/
+*.nupkg
+
+# Логи
+*.log
+logs/
+
+# Сборка
+Debug/
+Release/
+x64/
+x86/
+
+# Прочее
+.DS_Store
+Thumbs.db
+*.tmp
