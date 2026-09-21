@@ -14,16 +14,20 @@ namespace Flower_shop
         private static readonly Color BgColor = Color.White;
         private static readonly Color SelectColor = Color.FromArgb(255, 220, 230);
 
-        public static void Apply(ComboBox cb)
+        public static void Apply(params ComboBox[] comboBoxes)
         {
-            cb.DrawMode = DrawMode.OwnerDrawFixed;
-            cb.DropDownStyle = ComboBoxStyle.DropDownList;
-            cb.FlatStyle = FlatStyle.Flat;
-            cb.BackColor = BgColor;
-            cb.Font = new Font("Monotype Corsiva", 25, FontStyle.Italic);
+            foreach (var cb in comboBoxes)
+            {
+                cb.DrawMode = DrawMode.OwnerDrawFixed;
+                cb.DropDownStyle = ComboBoxStyle.DropDownList;
+                cb.FlatStyle = FlatStyle.Flat;
+                cb.BackColor = BgColor;
+                cb.Font = new Font("Monotype Corsiva", 25, FontStyle.Italic);
 
-            cb.DrawItem += (s, e) => DrawItem(s as ComboBox, e);
-            cb.Paint += (s, e) => PaintField(s as ComboBox, e);
+                cb.DrawItem += (s, e) => DrawItem(s as ComboBox, e);
+                cb.Paint += (s, e) => PaintField(s as ComboBox, e);
+            }
+                
         }
 
         private static void DrawItem(ComboBox cb, DrawItemEventArgs e)

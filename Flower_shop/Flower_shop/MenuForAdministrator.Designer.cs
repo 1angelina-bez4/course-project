@@ -52,16 +52,15 @@ namespace Flower_shop
             this.label1.TabIndex = 0;
             this.label1.Text = "Меню";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            
             // 
             // VisualUser
             // 
             this.VisualUser.AutoSize = true;
-            this.VisualUser.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.VisualUser.Font = new System.Drawing.Font("Monotype Corsiva", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.VisualUser.ForeColor = System.Drawing.Color.Crimson;
             this.VisualUser.Location = new System.Drawing.Point(-5, 50);
             this.VisualUser.Name = "VisualUser";
-            this.VisualUser.Size = new System.Drawing.Size(230, 37);
+            this.VisualUser.Size = new System.Drawing.Size(257, 41);
             this.VisualUser.TabIndex = 1;
             this.VisualUser.Text = "Администратор:";
             // 

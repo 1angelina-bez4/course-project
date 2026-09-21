@@ -27,8 +27,8 @@ namespace Flower_shop
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            UserForm form = new UserForm();
-            form.Show();
+             new UserForm().ShowDialog();
+            this.Show();
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace Flower_shop
 
         private void LoadNameUsers()
         {
-            UserInfoHelper.SetUserLabel(VisualUser, userId, "Директор");
+            UserInfoHelper.SetUserLabel(VisualUser, userId, "Администратор");
         }
     }
 }
