@@ -63,7 +63,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(361, 82);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Корзина";
+            this.button1.Text = "Оформление чека";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // exit

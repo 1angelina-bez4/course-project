@@ -50,122 +50,122 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComboBoxStyleHelper.cs" />
-    <Compile Include="Authorization.cs">
+    <Compile Include="Class\ComboBoxStyleHelper.cs" />
+    <Compile Include="Forms\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Authorization.Designer.cs">
+    <Compile Include="Forms\Authorization.Designer.cs">
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassConnection.cs" />
-    <Compile Include="GridStyle.cs" />
-    <Compile Include="Guide.cs">
+    <Compile Include="Class\ClassConnection.cs" />
+    <Compile Include="Class\GridStyle.cs" />
+    <Compile Include="Forms\AdminForms\Guide.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Guide.Designer.cs">
+    <Compile Include="Forms\AdminForms\Guide.Designer.cs">
       <DependentUpon>Guide.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForAdministrator.cs">
+    <Compile Include="Forms\Menu\MenuForAdministrator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForAdministrator.Designer.cs">
+    <Compile Include="Forms\Menu\MenuForAdministrator.Designer.cs">
       <DependentUpon>MenuForAdministrator.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForMerchandiseSpecialist.cs">
+    <Compile Include="Forms\Menu\MenuForMerchandiseSpecialist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForMerchandiseSpecialist.Designer.cs">
+    <Compile Include="Forms\Menu\MenuForMerchandiseSpecialist.Designer.cs">
       <DependentUpon>MenuForMerchandiseSpecialist.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForDirector.cs">
+    <Compile Include="Forms\Menu\MenuForDirector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForDirector.Designer.cs">
+    <Compile Include="Forms\Menu\MenuForDirector.Designer.cs">
       <DependentUpon>MenuForDirector.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForSalesman.cs">
+    <Compile Include="Forms\Menu\MenuForSalesman.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForSalesman.Designer.cs">
+    <Compile Include="Forms\Menu\MenuForSalesman.Designer.cs">
       <DependentUpon>MenuForSalesman.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sale.cs">
+    <Compile Include="Forms\DirectorForms\Sale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sale.Designer.cs">
+    <Compile Include="Forms\DirectorForms\Sale.Designer.cs">
       <DependentUpon>Sale.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductManagement.cs">
+    <Compile Include="Forms\AdminForms\ProductManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductManagement.Designer.cs">
+    <Compile Include="Forms\AdminForms\ProductManagement.Designer.cs">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductViewing.cs">
+    <Compile Include="Forms\MerchandForms\ProductViewing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductViewing.Designer.cs">
+    <Compile Include="Forms\MerchandForms\ProductViewing.Designer.cs">
       <DependentUpon>ProductViewing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextBoxHelper.cs" />
-    <Compile Include="UserInfoHelper.cs" />
-    <Compile Include="Warehouse.cs">
+    <Compile Include="Class\TextBoxHelper.cs" />
+    <Compile Include="Class\UserInfoHelper.cs" />
+    <Compile Include="Forms\MerchandForms\Warehouse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Warehouse.Designer.cs">
+    <Compile Include="Forms\MerchandForms\Warehouse.Designer.cs">
       <DependentUpon>Warehouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="SupplierSearch.cs">
+    <Compile Include="Forms\DirectorForms\SupplierSearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SupplierSearch.Designer.cs">
+    <Compile Include="Forms\DirectorForms\SupplierSearch.Designer.cs">
       <DependentUpon>SupplierSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserForm.cs">
+    <Compile Include="Forms\AdminForms\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserForm.Designer.cs">
+    <Compile Include="Forms\AdminForms\UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Checkout.cs">
+    <Compile Include="Forms\SalesmanForms\Checkout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Checkout.Designer.cs">
+    <Compile Include="Forms\SalesmanForms\Checkout.Designer.cs">
       <DependentUpon>Checkout.cs</DependentUpon>
     </Compile>
-    <Compile Include="WarehouseInspection.cs">
+    <Compile Include="Forms\DirectorForms\WarehouseInspection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WarehouseInspection.Designer.cs">
+    <Compile Include="Forms\DirectorForms\WarehouseInspection.Designer.cs">
       <DependentUpon>WarehouseInspection.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Authorization.resx">
+    <EmbeddedResource Include="Forms\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Guide.resx">
+    <EmbeddedResource Include="Forms\AdminForms\Guide.resx">
       <DependentUpon>Guide.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForAdministrator.resx">
+    <EmbeddedResource Include="Forms\Menu\MenuForAdministrator.resx">
       <DependentUpon>MenuForAdministrator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForMerchandiseSpecialist.resx">
+    <EmbeddedResource Include="Forms\Menu\MenuForMerchandiseSpecialist.resx">
       <DependentUpon>MenuForMerchandiseSpecialist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForDirector.resx">
+    <EmbeddedResource Include="Forms\Menu\MenuForDirector.resx">
       <DependentUpon>MenuForDirector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForSalesman.resx">
+    <EmbeddedResource Include="Forms\Menu\MenuForSalesman.resx">
       <DependentUpon>MenuForSalesman.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sale.resx">
+    <EmbeddedResource Include="Forms\DirectorForms\Sale.resx">
       <DependentUpon>Sale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductManagement.resx">
+    <EmbeddedResource Include="Forms\AdminForms\ProductManagement.resx">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductViewing.resx">
+    <EmbeddedResource Include="Forms\MerchandForms\ProductViewing.resx">
       <DependentUpon>ProductViewing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -178,19 +178,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Warehouse.resx">
+    <EmbeddedResource Include="Forms\MerchandForms\Warehouse.resx">
       <DependentUpon>Warehouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SupplierSearch.resx">
+    <EmbeddedResource Include="Forms\DirectorForms\SupplierSearch.resx">
       <DependentUpon>SupplierSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserForm.resx">
+    <EmbeddedResource Include="Forms\AdminForms\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Checkout.resx">
+    <EmbeddedResource Include="Forms\SalesmanForms\Checkout.resx">
       <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WarehouseInspection.resx">
+    <EmbeddedResource Include="Forms\DirectorForms\WarehouseInspection.resx">
       <DependentUpon>WarehouseInspection.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -238,5 +238,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
