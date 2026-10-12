@@ -48,7 +48,7 @@ namespace Flower_shop
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(237, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 41);
+            this.label1.Size = new System.Drawing.Size(80, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Меню";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -60,7 +60,7 @@ namespace Flower_shop
             this.VisualUser.ForeColor = System.Drawing.Color.Crimson;
             this.VisualUser.Location = new System.Drawing.Point(-5, 50);
             this.VisualUser.Name = "VisualUser";
-            this.VisualUser.Size = new System.Drawing.Size(257, 41);
+            this.VisualUser.Size = new System.Drawing.Size(206, 33);
             this.VisualUser.TabIndex = 1;
             this.VisualUser.Text = "Администратор:";
             // 
@@ -91,6 +91,7 @@ namespace Flower_shop
             this.button1.TabIndex = 3;
             this.button1.Text = "Справочники\r\n";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -132,10 +133,11 @@ namespace Flower_shop
             this.button2.TabIndex = 7;
             this.button2.Text = "Управление товарами";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MenuForAdministrator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(562, 560);

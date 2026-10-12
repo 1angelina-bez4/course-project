@@ -40,5 +40,19 @@ namespace Flower_shop
         {
             UserInfoHelper.SetUserLabel(VisualUser, userId, "Администратор");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Guide().ShowDialog();
+            this.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ProductManagement().ShowDialog();
+            this.Show();
+        }
     }
 }

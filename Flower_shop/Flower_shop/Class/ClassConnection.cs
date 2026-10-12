@@ -8,6 +8,6 @@ namespace Flower_shop
 {
     public  class ClassConnection
     {
-        public string ConnectString = "host=localhost;uid=root;pwd=Root123;database=flowershop";
+        public string ConnectString = "host=localhost;uid=root;pwd=root;database=flowershop";
     }
 }

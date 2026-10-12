@@ -114,6 +114,7 @@ namespace Flower_shop
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Поставщики";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // button2
             // 
@@ -241,6 +242,7 @@ namespace Flower_shop
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Категории";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // button7
             // 
