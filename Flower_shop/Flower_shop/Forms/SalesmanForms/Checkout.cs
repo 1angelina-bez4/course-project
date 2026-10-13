@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Flower_shop
 {
@@ -30,6 +31,16 @@ namespace Flower_shop
         private void search_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Checkout_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadData1()
+        {
+            ClassConnection connection = new ClassConnection();
         }
     }
 }

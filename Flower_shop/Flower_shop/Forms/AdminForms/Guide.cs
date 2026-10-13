@@ -17,6 +17,8 @@ namespace Flower_shop
         public Guide()
         {
             InitializeComponent();
+            LoadData();
+            LoadData2();
         }
 
         void LoadData()
@@ -60,20 +62,26 @@ namespace Flower_shop
                     ad.Fill(suppliersTable);
 
                 }
-                dataGridView1.DataSource = suppliersTable;
-                GridStyle.Apply(dataGridView1);
+                dataGridView2.DataSource = suppliersTable;
+                GridStyle.Apply(dataGridView2);
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+      
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+            LoadData2();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
             LoadData();
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-            LoadData2();
         }
     }
 }

@@ -90,7 +90,7 @@ namespace Flower_shop
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(790, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 41);
+            this.label1.Size = new System.Drawing.Size(163, 33);
             this.label1.TabIndex = 21;
             this.label1.Text = "Текущий чек";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -127,7 +127,7 @@ namespace Flower_shop
             this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Location = new System.Drawing.Point(574, 528);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(281, 41);
+            this.label2.Size = new System.Drawing.Size(226, 33);
             this.label2.TabIndex = 31;
             this.label2.Text = "Сумма без скидки: ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -141,7 +141,7 @@ namespace Flower_shop
             this.label5.ForeColor = System.Drawing.Color.Crimson;
             this.label5.Location = new System.Drawing.Point(599, 609);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 41);
+            this.label5.Size = new System.Drawing.Size(94, 33);
             this.label5.TabIndex = 33;
             this.label5.Text = "Итого:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -155,7 +155,7 @@ namespace Flower_shop
             this.label6.ForeColor = System.Drawing.Color.Crimson;
             this.label6.Location = new System.Drawing.Point(585, 569);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 41);
+            this.label6.Size = new System.Drawing.Size(115, 33);
             this.label6.TabIndex = 35;
             this.label6.Text = "Скидка:  ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -219,7 +219,7 @@ namespace Flower_shop
             this.label4.ForeColor = System.Drawing.Color.Crimson;
             this.label4.Location = new System.Drawing.Point(330, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 41);
+            this.label4.Size = new System.Drawing.Size(115, 33);
             this.label4.TabIndex = 40;
             this.label4.Text = "Товары:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -236,7 +236,7 @@ namespace Flower_shop
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(629, 474);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(296, 49);
+            this.comboBox4.Size = new System.Drawing.Size(296, 41);
             this.comboBox4.TabIndex = 50;
             this.comboBox4.Tag = "";
             this.comboBox4.Text = "Оплата";
@@ -279,7 +279,7 @@ namespace Flower_shop
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(296, 525);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(272, 49);
+            this.comboBox3.Size = new System.Drawing.Size(272, 41);
             this.comboBox3.TabIndex = 54;
             this.comboBox3.Text = "Фильтрация";
             // 
@@ -316,7 +316,7 @@ namespace Flower_shop
             // 
             // Checkout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1006, 721);
@@ -348,6 +348,7 @@ namespace Flower_shop
             this.Name = "Checkout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Оформление чека";
+            this.Load += new System.EventHandler(this.Checkout_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

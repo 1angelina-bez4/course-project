@@ -12,6 +12,7 @@ namespace Flower_shop
 {
     public partial class MenuForMerchandiseSpecialist : Form
     {
+        private int userid;
         public MenuForMerchandiseSpecialist(int userId)
         {
             InitializeComponent();
@@ -19,7 +20,21 @@ namespace Flower_shop
 
         private void exit_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ProductManagement().ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new warehouse().ShowDialog();
+            this.Close();
         }
     }
 }

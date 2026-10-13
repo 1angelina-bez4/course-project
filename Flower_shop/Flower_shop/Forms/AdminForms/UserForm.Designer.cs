@@ -65,7 +65,7 @@ namespace Flower_shop
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(335, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 41);
+            this.label1.Size = new System.Drawing.Size(329, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Управелние пользователями";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,7 +98,7 @@ namespace Flower_shop
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Location = new System.Drawing.Point(749, 551);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(221, 49);
+            this.cbRole.Size = new System.Drawing.Size(221, 41);
             this.cbRole.TabIndex = 4;
             this.cbRole.Tag = "";
             // 
@@ -240,7 +240,7 @@ namespace Flower_shop
             this.txtPhone.Location = new System.Drawing.Point(496, 551);
             this.txtPhone.Mask = "+7 ___ ___ __ __";
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(232, 45);
+            this.txtPhone.Size = new System.Drawing.Size(232, 38);
             this.txtPhone.TabIndex = 18;
             // 
             // cbSort
@@ -250,9 +250,9 @@ namespace Flower_shop
             this.cbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSort.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.cbSort.FormattingEnabled = true;
-            this.cbSort.Location = new System.Drawing.Point(638, 43);
+            this.cbSort.Location = new System.Drawing.Point(651, 43);
             this.cbSort.Name = "cbSort";
-            this.cbSort.Size = new System.Drawing.Size(215, 49);
+            this.cbSort.Size = new System.Drawing.Size(215, 41);
             this.cbSort.TabIndex = 34;
             // 
             // cbFilt
@@ -262,9 +262,9 @@ namespace Flower_shop
             this.cbFilt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFilt.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.cbFilt.FormattingEnabled = true;
-            this.cbFilt.Location = new System.Drawing.Point(412, 43);
+            this.cbFilt.Location = new System.Drawing.Point(423, 43);
             this.cbFilt.Name = "cbFilt";
-            this.cbFilt.Size = new System.Drawing.Size(222, 49);
+            this.cbFilt.Size = new System.Drawing.Size(222, 41);
             this.cbFilt.TabIndex = 33;
             // 
             // txtSearch
@@ -325,7 +325,7 @@ namespace Flower_shop
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1008, 729);

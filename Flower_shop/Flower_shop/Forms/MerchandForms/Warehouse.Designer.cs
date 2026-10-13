@@ -57,8 +57,7 @@
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button2.BackColor = System.Drawing.Color.LavenderBlush;
             this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -72,8 +71,7 @@
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.BackColor = System.Drawing.Color.LavenderBlush;
             this.button1.Enabled = false;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -100,7 +98,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox2.BackColor = System.Drawing.Color.LavenderBlush;
             this.textBox2.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.textBox2.ForeColor = System.Drawing.Color.PaleVioletRed;
@@ -134,7 +132,7 @@
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(353, -3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 41);
+            this.label1.Size = new System.Drawing.Size(238, 33);
             this.label1.TabIndex = 19;
             this.label1.Text = "Управелние складом";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -185,34 +183,31 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.comboBox2.BackColor = System.Drawing.Color.LavenderBlush;
             this.comboBox2.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(13, 603);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(342, 49);
+            this.comboBox2.Size = new System.Drawing.Size(342, 41);
             this.comboBox2.TabIndex = 44;
             this.comboBox2.Text = "Сортировать по ";
             // 
             // comboBox3
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.comboBox3.BackColor = System.Drawing.Color.LavenderBlush;
             this.comboBox3.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(13, 548);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(342, 49);
+            this.comboBox3.Size = new System.Drawing.Size(342, 41);
             this.comboBox3.TabIndex = 43;
             this.comboBox3.Text = "Фильтрация";
             // 
             // search
             // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.search.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.search.BackColor = System.Drawing.Color.LavenderBlush;
             this.search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.search.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -227,8 +222,7 @@
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button3.BackColor = System.Drawing.Color.LavenderBlush;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.Color.Crimson;
@@ -243,7 +237,7 @@
             // 
             this.comboBox1.AccessibleDescription = "";
             this.comboBox1.AccessibleName = "";
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.comboBox1.BackColor = System.Drawing.Color.LavenderBlush;
             this.comboBox1.DisplayMember = "Роль";
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -251,13 +245,14 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(379, 543);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(296, 49);
+            this.comboBox1.Size = new System.Drawing.Size(296, 41);
             this.comboBox1.TabIndex = 45;
             this.comboBox1.Tag = "";
             this.comboBox1.Text = "Поставщики";
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.PaleVioletRed;
             this.dateTimePicker2.CalendarTitleBackColor = System.Drawing.Color.PaleVioletRed;
             this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.PaleVioletRed;
@@ -266,26 +261,26 @@
             this.dateTimePicker2.MaxDate = new System.DateTime(2029, 10, 31, 0, 0, 0, 0);
             this.dateTimePicker2.MinDate = new System.DateTime(2026, 9, 2, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(293, 45);
+            this.dateTimePicker2.Size = new System.Drawing.Size(293, 38);
             this.dateTimePicker2.TabIndex = 47;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Crimson;
             this.label3.Location = new System.Drawing.Point(713, 430);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 41);
+            this.label3.Size = new System.Drawing.Size(194, 33);
             this.label3.TabIndex = 46;
             this.label3.Text = "Дата поставки:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox1.BackColor = System.Drawing.Color.LavenderBlush;
             this.textBox1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.textBox1.ForeColor = System.Drawing.Color.PaleVioletRed;
@@ -301,7 +296,7 @@
             // 
             this.comboBox4.AccessibleDescription = "";
             this.comboBox4.AccessibleName = "";
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.comboBox4.BackColor = System.Drawing.Color.LavenderBlush;
             this.comboBox4.DisplayMember = "Роль";
             this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -309,14 +304,14 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(379, 488);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(296, 49);
+            this.comboBox4.Size = new System.Drawing.Size(296, 41);
             this.comboBox4.TabIndex = 49;
             this.comboBox4.Tag = "";
             this.comboBox4.Text = "Товар";
             // 
             // warehouse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1006, 721);
@@ -345,6 +340,7 @@
             this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.Name = "warehouse";
             this.Text = "Управление складом";
+            this.Load += new System.EventHandler(this.warehouse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

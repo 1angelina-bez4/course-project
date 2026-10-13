@@ -51,6 +51,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Управление товарами\r\n";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // exit
             // 
@@ -73,7 +74,7 @@
             this.VisualUser.ForeColor = System.Drawing.Color.Crimson;
             this.VisualUser.Location = new System.Drawing.Point(7, 49);
             this.VisualUser.Name = "VisualUser";
-            this.VisualUser.Size = new System.Drawing.Size(176, 41);
+            this.VisualUser.Size = new System.Drawing.Size(142, 33);
             this.VisualUser.TabIndex = 8;
             this.VisualUser.Text = "Товаровед:";
             // 
@@ -85,7 +86,7 @@
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(239, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 41);
+            this.label1.Size = new System.Drawing.Size(80, 33);
             this.label1.TabIndex = 7;
             this.label1.Text = "Меню";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -115,10 +116,11 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Управление складом";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MenuForMerchandiseSpecialist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(562, 560);
