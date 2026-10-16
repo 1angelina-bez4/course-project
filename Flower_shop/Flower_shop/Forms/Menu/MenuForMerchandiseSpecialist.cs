@@ -20,21 +20,23 @@ namespace Flower_shop
 
         private void exit_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new Auth().ShowDialog();
             this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new ProductManagement().ShowDialog();
-            this.Close();
+            new ProductViewing().ShowDialog();
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             new warehouse().ShowDialog();
-            this.Close();
+            this.Show();
         }
     }
 }

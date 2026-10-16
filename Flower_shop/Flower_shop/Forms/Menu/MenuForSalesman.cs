@@ -16,5 +16,26 @@ namespace Flower_shop
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ProductViewing().ShowDialog();
+            this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Checkout().ShowDialog();
+            this.Show();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Auth().ShowDialog();
+            this.Close();
+        }
     }
 }

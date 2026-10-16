@@ -57,8 +57,7 @@ namespace Flower_shop
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.BackColor = System.Drawing.Color.LavenderBlush;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.Crimson;
@@ -81,6 +80,7 @@ namespace Flower_shop
             this.exit.TabIndex = 16;
             this.exit.Text = "Выход в меню";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // label1
             // 
@@ -97,6 +97,7 @@ namespace Flower_shop
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Flower_shop.Properties.Resources._346167;
             this.pictureBox1.Location = new System.Drawing.Point(770, 432);
@@ -105,7 +106,6 @@ namespace Flower_shop
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -162,8 +162,7 @@ namespace Flower_shop
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button2.BackColor = System.Drawing.Color.LavenderBlush;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.Color.Crimson;
@@ -198,8 +197,7 @@ namespace Flower_shop
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox1.BackColor = System.Drawing.Color.LavenderBlush;
             this.textBox1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.textBox1.ForeColor = System.Drawing.Color.PaleVioletRed;
@@ -228,7 +226,7 @@ namespace Flower_shop
             // 
             this.comboBox4.AccessibleDescription = "";
             this.comboBox4.AccessibleName = "";
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.comboBox4.BackColor = System.Drawing.Color.LavenderBlush;
             this.comboBox4.DisplayMember = "Роль";
             this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -272,8 +270,7 @@ namespace Flower_shop
             // 
             // comboBox3
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.comboBox3.BackColor = System.Drawing.Color.LavenderBlush;
             this.comboBox3.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.comboBox3.FormattingEnabled = true;
@@ -285,8 +282,7 @@ namespace Flower_shop
             // 
             // search
             // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.search.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.search.BackColor = System.Drawing.Color.LavenderBlush;
             this.search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.search.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -298,12 +294,10 @@ namespace Flower_shop
             this.search.Size = new System.Drawing.Size(327, 45);
             this.search.TabIndex = 53;
             this.search.Text = "Поиск";
-            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button4.BackColor = System.Drawing.Color.LavenderBlush;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.ForeColor = System.Drawing.Color.Crimson;

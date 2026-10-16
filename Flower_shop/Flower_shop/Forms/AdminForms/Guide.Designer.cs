@@ -82,9 +82,9 @@ namespace Flower_shop
             this.VisualUser.ForeColor = System.Drawing.Color.Crimson;
             this.VisualUser.Location = new System.Drawing.Point(657, 9);
             this.VisualUser.Name = "VisualUser";
-            this.VisualUser.Size = new System.Drawing.Size(135, 33);
+            this.VisualUser.Size = new System.Drawing.Size(206, 33);
             this.VisualUser.TabIndex = 9;
-            this.VisualUser.Text = "Директор:";
+            this.VisualUser.Text = "Администратор:";
             // 
             // tabCategory
             // 
@@ -324,8 +324,7 @@ namespace Flower_shop
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button4.BackColor = System.Drawing.Color.LavenderBlush;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));

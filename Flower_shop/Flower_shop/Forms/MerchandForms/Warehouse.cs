@@ -47,5 +47,10 @@ namespace Flower_shop
                 GridStyle.Apply(dataGridView1);
             }
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

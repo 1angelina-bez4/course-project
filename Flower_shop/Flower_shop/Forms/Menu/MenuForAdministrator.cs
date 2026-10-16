@@ -33,6 +33,8 @@ namespace Flower_shop
 
         private void exit_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new Auth().ShowDialog();
             this.Close();
         }
 

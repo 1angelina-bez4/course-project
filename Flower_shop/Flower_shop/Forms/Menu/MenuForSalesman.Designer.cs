@@ -51,6 +51,7 @@
             this.button3.TabIndex = 18;
             this.button3.Text = "Просмотр товаров";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -65,6 +66,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Оформление чека";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // exit
             // 
@@ -78,6 +80,7 @@
             this.exit.TabIndex = 16;
             this.exit.Text = "Выйти из аккаунта";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // VisualUser
             // 
@@ -86,7 +89,7 @@
             this.VisualUser.ForeColor = System.Drawing.Color.Crimson;
             this.VisualUser.Location = new System.Drawing.Point(7, 49);
             this.VisualUser.Name = "VisualUser";
-            this.VisualUser.Size = new System.Drawing.Size(156, 41);
+            this.VisualUser.Size = new System.Drawing.Size(125, 33);
             this.VisualUser.TabIndex = 15;
             this.VisualUser.Text = "Продавец:";
             // 
@@ -98,7 +101,7 @@
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(239, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 41);
+            this.label1.Size = new System.Drawing.Size(80, 33);
             this.label1.TabIndex = 14;
             this.label1.Text = "Меню";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -117,7 +120,7 @@
             // 
             // MenuForSalesman
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(562, 560);
