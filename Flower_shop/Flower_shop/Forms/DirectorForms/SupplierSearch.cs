@@ -21,6 +21,11 @@ namespace Flower_shop
             
         }
 
+        /// <summary>
+        /// Загрузка данных 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SupplierSearch_Load(object sender, EventArgs e)
         {
             // Placeholder
@@ -84,6 +89,10 @@ namespace Flower_shop
             }
         }
 
+        /// <summary>
+        /// Загрузка категорий 
+        /// </summary>
+        /// <param name="con"></param>
         private void LoadCategories(MySqlConnection con)
         {
             cbCategory.Items.Clear();

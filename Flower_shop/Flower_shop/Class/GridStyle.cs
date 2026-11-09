@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Flower_shop
@@ -22,9 +18,6 @@ namespace Flower_shop
         private static readonly Font CellFont = new Font("Monotype Corsiva", 16, FontStyle.Italic);
         private static readonly Font HeaderFont = new Font("Monotype Corsiva", 14, FontStyle.Bold | FontStyle.Italic);
 
-        /// <summary>
-        /// Применяет единый стиль к DataGridView
-        /// </summary>
         public static void Apply(DataGridView grid)
         {
             grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -41,17 +34,28 @@ namespace Flower_shop
             grid.DefaultCellStyle.SelectionBackColor = SelectBgColor;
             grid.DefaultCellStyle.SelectionForeColor = TextColor;
 
+            // перенос текста, чтобы пользователь видел длинные данные полностью
+            grid.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
             //Шапка
             grid.ColumnHeadersDefaultCellStyle.Font = HeaderFont;
             grid.ColumnHeadersDefaultCellStyle.ForeColor = HeaderTextColor;
             grid.ColumnHeadersDefaultCellStyle.BackColor = HeaderBgColor;
             grid.ColumnHeadersDefaultCellStyle.SelectionBackColor = HeaderBgColor;
+            grid.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.False;
 
             grid.ColumnHeadersHeight = 45;
             grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 
             //Строки
             grid.RowTemplate.Height = 70;
+
+            // Это предотвращает "скачки" и тормоза при фильтрации, но позволяет длинному тексту занять 2-3 строки.
+            grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+
+            // Запрещает пользователю случайно изменить высоту мышкой и сломать дизайн
+            grid.AllowUserToResizeRows = false;
+
             grid.EnableHeadersVisualStyles = false;
 
             //Границы

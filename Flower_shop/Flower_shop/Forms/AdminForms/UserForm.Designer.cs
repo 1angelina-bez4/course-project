@@ -37,19 +37,19 @@ namespace Flower_shop
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.exit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.butAdd = new System.Windows.Forms.Button();
+            this.butUpd = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.txtPhone = new System.Windows.Forms.MaskedTextBox();
             this.cbSort = new System.Windows.Forms.ComboBox();
             this.cbFilt = new System.Windows.Forms.ComboBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.txtPatronymic = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +65,7 @@ namespace Flower_shop
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(335, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 33);
+            this.label1.Size = new System.Drawing.Size(412, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Управелние пользователями";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,7 +98,7 @@ namespace Flower_shop
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Location = new System.Drawing.Point(749, 551);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(221, 41);
+            this.cbRole.Size = new System.Drawing.Size(221, 49);
             this.cbRole.TabIndex = 4;
             this.cbRole.Tag = "";
             // 
@@ -108,7 +108,7 @@ namespace Flower_shop
             this.txtSurname.BackColor = System.Drawing.Color.LavenderBlush;
             this.txtSurname.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtSurname.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.txtSurname.Location = new System.Drawing.Point(147, 497);
+            this.txtSurname.Location = new System.Drawing.Point(12, 548);
             this.txtSurname.MaxLength = 300;
             this.txtSurname.Multiline = true;
             this.txtSurname.Name = "txtSurname";
@@ -158,33 +158,35 @@ namespace Flower_shop
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
-            // button1
+            // butAdd
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.Enabled = false;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.Crimson;
-            this.button1.Location = new System.Drawing.Point(12, 608);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(360, 56);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Добавить пользователя";
-            this.button1.UseVisualStyleBackColor = false;
+            this.butAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.butAdd.BackColor = System.Drawing.Color.LavenderBlush;
+            this.butAdd.Enabled = false;
+            this.butAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.butAdd.ForeColor = System.Drawing.Color.Crimson;
+            this.butAdd.Location = new System.Drawing.Point(12, 608);
+            this.butAdd.Name = "butAdd";
+            this.butAdd.Size = new System.Drawing.Size(360, 56);
+            this.butAdd.TabIndex = 12;
+            this.butAdd.Text = "Добавить";
+            this.butAdd.UseVisualStyleBackColor = false;
+            this.butAdd.Click += new System.EventHandler(this.butAdd_Click);
             // 
-            // button2
+            // butUpd
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button2.Enabled = false;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.Crimson;
-            this.button2.Location = new System.Drawing.Point(644, 608);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(352, 56);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Редактировать пользователя";
-            this.button2.UseVisualStyleBackColor = false;
+            this.butUpd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.butUpd.BackColor = System.Drawing.Color.LavenderBlush;
+            this.butUpd.Enabled = false;
+            this.butUpd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.butUpd.ForeColor = System.Drawing.Color.Crimson;
+            this.butUpd.Location = new System.Drawing.Point(644, 608);
+            this.butUpd.Name = "butUpd";
+            this.butUpd.Size = new System.Drawing.Size(352, 56);
+            this.butUpd.TabIndex = 13;
+            this.butUpd.Text = "Редактировать пользователя";
+            this.butUpd.UseVisualStyleBackColor = false;
+            this.butUpd.Click += new System.EventHandler(this.butUpd_Click);
             // 
             // pictureBox2
             // 
@@ -233,16 +235,6 @@ namespace Flower_shop
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
             // 
-            // txtPhone
-            // 
-            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPhone.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.txtPhone.Location = new System.Drawing.Point(496, 551);
-            this.txtPhone.Mask = "+7 ___ ___ __ __";
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(232, 38);
-            this.txtPhone.TabIndex = 18;
-            // 
             // cbSort
             // 
             this.cbSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -252,8 +244,9 @@ namespace Flower_shop
             this.cbSort.FormattingEnabled = true;
             this.cbSort.Location = new System.Drawing.Point(651, 43);
             this.cbSort.Name = "cbSort";
-            this.cbSort.Size = new System.Drawing.Size(215, 41);
+            this.cbSort.Size = new System.Drawing.Size(215, 49);
             this.cbSort.TabIndex = 34;
+            this.cbSort.SelectedIndexChanged += new System.EventHandler(this.cbSort_SelectedIndexChanged);
             // 
             // cbFilt
             // 
@@ -264,8 +257,9 @@ namespace Flower_shop
             this.cbFilt.FormattingEnabled = true;
             this.cbFilt.Location = new System.Drawing.Point(423, 43);
             this.cbFilt.Name = "cbFilt";
-            this.cbFilt.Size = new System.Drawing.Size(222, 41);
+            this.cbFilt.Size = new System.Drawing.Size(222, 49);
             this.cbFilt.TabIndex = 33;
+            this.cbFilt.SelectedIndexChanged += new System.EventHandler(this.cbFilt_SelectedIndexChanged);
             // 
             // txtSearch
             // 
@@ -280,6 +274,7 @@ namespace Flower_shop
             this.txtSearch.Size = new System.Drawing.Size(394, 49);
             this.txtSearch.TabIndex = 32;
             this.txtSearch.Text = "Поиск";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // button3
             // 
@@ -315,7 +310,7 @@ namespace Flower_shop
             this.txtName.BackColor = System.Drawing.Color.LavenderBlush;
             this.txtName.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtName.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.txtName.Location = new System.Drawing.Point(12, 551);
+            this.txtName.Location = new System.Drawing.Point(126, 497);
             this.txtName.MaxLength = 300;
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
@@ -323,21 +318,34 @@ namespace Flower_shop
             this.txtName.TabIndex = 37;
             this.txtName.Text = "Имя";
             // 
+            // txtPhone
+            // 
+            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhone.BackColor = System.Drawing.Color.LavenderBlush;
+            this.txtPhone.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtPhone.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.txtPhone.Location = new System.Drawing.Point(496, 552);
+            this.txtPhone.MaxLength = 11;
+            this.txtPhone.Multiline = true;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(232, 48);
+            this.txtPhone.TabIndex = 38;
+            // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtPatronymic);
             this.Controls.Add(this.cbSort);
             this.Controls.Add(this.cbFilt);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.butUpd);
+            this.Controls.Add(this.butAdd);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLogin);
@@ -375,18 +383,18 @@ namespace Flower_shop
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button exit;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button butAdd;
+        private System.Windows.Forms.Button butUpd;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.MaskedTextBox txtPhone;
         private System.Windows.Forms.ComboBox cbSort;
         private System.Windows.Forms.ComboBox cbFilt;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtPatronymic;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPhone;
     }
 }

@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ComboBoxStyleHelper.cs" />
+    <Compile Include="Class\UserRepository.cs" />
+    <Compile Include="Class\UserService.cs.cs" />
     <Compile Include="Forms\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>

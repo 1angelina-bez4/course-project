@@ -49,11 +49,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.ImageProduct = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -78,7 +80,7 @@
             this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Location = new System.Drawing.Point(438, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 33);
+            this.label2.Size = new System.Drawing.Size(132, 41);
             this.label2.TabIndex = 27;
             this.label2.Text = "Товары";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -166,9 +168,9 @@
             this.exit.BackColor = System.Drawing.Color.LavenderBlush;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exit.ForeColor = System.Drawing.Color.Crimson;
-            this.exit.Location = new System.Drawing.Point(121, 653);
+            this.exit.Location = new System.Drawing.Point(36, 653);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(253, 56);
+            this.exit.Size = new System.Drawing.Size(220, 56);
             this.exit.TabIndex = 37;
             this.exit.Text = "Выход в меню";
             this.exit.UseVisualStyleBackColor = false;
@@ -201,7 +203,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(728, 424);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(266, 41);
+            this.comboBox1.Size = new System.Drawing.Size(266, 49);
             this.comboBox1.TabIndex = 33;
             this.comboBox1.Tag = "";
             this.comboBox1.Text = "Категории";
@@ -260,7 +262,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(36, 534);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 41);
+            this.comboBox2.Size = new System.Drawing.Size(220, 49);
             this.comboBox2.TabIndex = 47;
             this.comboBox2.Text = "Сортировка";
             // 
@@ -272,7 +274,7 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(36, 479);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(220, 41);
+            this.comboBox3.Size = new System.Drawing.Size(220, 49);
             this.comboBox3.TabIndex = 46;
             this.comboBox3.Text = "Фильтрация";
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
@@ -288,7 +290,7 @@
             this.search.MaxLength = 100;
             this.search.Multiline = true;
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(397, 41);
+            this.search.Size = new System.Drawing.Size(446, 41);
             this.search.TabIndex = 45;
             this.search.Text = "Поиск";
             this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
@@ -299,9 +301,9 @@
             this.button3.BackColor = System.Drawing.Color.LavenderBlush;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.Color.Crimson;
-            this.button3.Location = new System.Drawing.Point(267, 479);
+            this.button3.Location = new System.Drawing.Point(36, 589);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 90);
+            this.button3.Size = new System.Drawing.Size(220, 54);
             this.button3.TabIndex = 44;
             this.button3.Text = "Сброс ";
             this.button3.UseVisualStyleBackColor = false;
@@ -328,20 +330,29 @@
             this.button5.Enabled = false;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.ForeColor = System.Drawing.Color.Crimson;
-            this.button5.Location = new System.Drawing.Point(44, 589);
+            this.button5.Location = new System.Drawing.Point(262, 653);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(393, 44);
+            this.button5.Size = new System.Drawing.Size(221, 56);
             this.button5.TabIndex = 49;
             this.button5.Text = "Удалить";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // ImageProduct
+            // 
+            this.ImageProduct.Location = new System.Drawing.Point(262, 479);
+            this.ImageProduct.Name = "ImageProduct";
+            this.ImageProduct.Size = new System.Drawing.Size(220, 164);
+            this.ImageProduct.TabIndex = 50;
+            this.ImageProduct.TabStop = false;
+            // 
             // ProductManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.Controls.Add(this.ImageProduct);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.comboBox2);
@@ -375,6 +386,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,5 +413,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox ImageProduct;
     }
 }
