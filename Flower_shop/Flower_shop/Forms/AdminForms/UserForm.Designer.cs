@@ -50,6 +50,7 @@ namespace Flower_shop
             this.txtPatronymic = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
+            this.lblValidInput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,7 +64,7 @@ namespace Flower_shop
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(335, 7);
+            this.label1.Location = new System.Drawing.Point(316, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(412, 41);
             this.label1.TabIndex = 1;
@@ -310,7 +311,7 @@ namespace Flower_shop
             this.txtName.BackColor = System.Drawing.Color.LavenderBlush;
             this.txtName.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtName.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.txtName.Location = new System.Drawing.Point(126, 497);
+            this.txtName.Location = new System.Drawing.Point(127, 500);
             this.txtName.MaxLength = 300;
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
@@ -331,12 +332,25 @@ namespace Flower_shop
             this.txtPhone.Size = new System.Drawing.Size(232, 48);
             this.txtPhone.TabIndex = 38;
             // 
+            // lblValidInput
+            // 
+            this.lblValidInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblValidInput.AutoSize = true;
+            this.lblValidInput.Font = new System.Drawing.Font("Monotype Corsiva", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblValidInput.ForeColor = System.Drawing.Color.Crimson;
+            this.lblValidInput.Location = new System.Drawing.Point(12, 463);
+            this.lblValidInput.Name = "lblValidInput";
+            this.lblValidInput.Size = new System.Drawing.Size(0, 34);
+            this.lblValidInput.TabIndex = 39;
+            this.lblValidInput.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.lblValidInput);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtPatronymic);
@@ -396,5 +410,6 @@ namespace Flower_shop
         private System.Windows.Forms.TextBox txtPatronymic;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Label lblValidInput;
     }
 }

@@ -52,7 +52,8 @@
   <ItemGroup>
     <Compile Include="Class\ComboBoxStyleHelper.cs" />
     <Compile Include="Class\UserRepository.cs" />
-    <Compile Include="Class\UserService.cs.cs" />
+    <Compile Include="Class\UserService.cs" />
+    <Compile Include="Class\ValidationHelper.cs" />
     <Compile Include="Forms\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +92,11 @@
     <Compile Include="Forms\Menu\MenuForSalesman.Designer.cs">
       <DependentUpon>MenuForSalesman.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DirectorForms\Sale.cs">
+    <Compile Include="Forms\DirectorForms\SalesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DirectorForms\Sale.Designer.cs">
-      <DependentUpon>Sale.cs</DependentUpon>
+    <Compile Include="Forms\DirectorForms\SalesForm.Designer.cs">
+      <DependentUpon>SalesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminForms\ProductManagement.cs">
       <SubType>Form</SubType>
@@ -161,8 +162,8 @@
     <EmbeddedResource Include="Forms\Menu\MenuForSalesman.resx">
       <DependentUpon>MenuForSalesman.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DirectorForms\Sale.resx">
-      <DependentUpon>Sale.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DirectorForms\SalesForm.resx">
+      <DependentUpon>SalesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\ProductManagement.resx">
       <DependentUpon>ProductManagement.cs</DependentUpon>

@@ -37,7 +37,7 @@ namespace Flower_shop
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new ProductViewing().ShowDialog();
+            new SalesForm().ShowDialog();
             this.Show();
         }
 

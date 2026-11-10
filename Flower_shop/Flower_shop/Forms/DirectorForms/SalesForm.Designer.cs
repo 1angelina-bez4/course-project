@@ -1,7 +1,7 @@
 ﻿
 namespace Flower_shop
 {
-    partial class Sale
+    partial class SalesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,15 @@ namespace Flower_shop
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sale));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.VisualUser = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.exit = new System.Windows.Forms.Button();
-            this.search = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSbros = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.cmbFilt = new System.Windows.Forms.ComboBox();
+            this.cmbSort = new System.Windows.Forms.ComboBox();
+            this.btnExcel = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -63,18 +62,6 @@ namespace Flower_shop
             this.label1.Text = "Учёт продаж";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // VisualUser
-            // 
-            this.VisualUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.VisualUser.AutoSize = true;
-            this.VisualUser.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.VisualUser.ForeColor = System.Drawing.Color.Crimson;
-            this.VisualUser.Location = new System.Drawing.Point(317, 34);
-            this.VisualUser.Name = "VisualUser";
-            this.VisualUser.Size = new System.Drawing.Size(168, 41);
-            this.VisualUser.TabIndex = 3;
-            this.VisualUser.Text = "Директор:";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -89,89 +76,90 @@ namespace Flower_shop
             this.dataGridView1.Size = new System.Drawing.Size(984, 386);
             this.dataGridView1.TabIndex = 4;
             // 
-            // exit
+            // btnSbros
             // 
-            this.exit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnSbros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.exit.BackColor = System.Drawing.Color.LavenderBlush;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exit.ForeColor = System.Drawing.Color.Crimson;
-            this.exit.Location = new System.Drawing.Point(163, 596);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(333, 52);
-            this.exit.TabIndex = 12;
-            this.exit.Text = "Сброс ";
-            this.exit.UseVisualStyleBackColor = false;
+            this.btnSbros.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnSbros.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSbros.ForeColor = System.Drawing.Color.Crimson;
+            this.btnSbros.Location = new System.Drawing.Point(163, 596);
+            this.btnSbros.Name = "btnSbros";
+            this.btnSbros.Size = new System.Drawing.Size(333, 52);
+            this.btnSbros.TabIndex = 12;
+            this.btnSbros.Text = "Сброс ";
+            this.btnSbros.UseVisualStyleBackColor = false;
             // 
-            // search
+            // txtSearch
             // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.search.BackColor = System.Drawing.Color.LavenderBlush;
-            this.search.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.search.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.search.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.search.Location = new System.Drawing.Point(283, 484);
-            this.search.MaxLength = 100;
-            this.search.Multiline = true;
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(458, 51);
-            this.search.TabIndex = 13;
-            this.search.Text = "Поиск";
+            this.txtSearch.BackColor = System.Drawing.Color.LavenderBlush;
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtSearch.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.txtSearch.Location = new System.Drawing.Point(283, 484);
+            this.txtSearch.MaxLength = 100;
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(458, 51);
+            this.txtSearch.TabIndex = 13;
+            this.txtSearch.Text = "Поиск";
             // 
-            // comboBox1
+            // cmbFilt
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbFilt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.comboBox1.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(225, 541);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(271, 49);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.Text = "Фильтрация";
+            this.cmbFilt.BackColor = System.Drawing.Color.LavenderBlush;
+            this.cmbFilt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFilt.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.cmbFilt.FormattingEnabled = true;
+            this.cmbFilt.Location = new System.Drawing.Point(225, 541);
+            this.cmbFilt.Name = "cmbFilt";
+            this.cmbFilt.Size = new System.Drawing.Size(271, 49);
+            this.cmbFilt.TabIndex = 14;
             // 
-            // comboBox2
+            // cmbSort
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbSort.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.comboBox2.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(521, 541);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(271, 49);
-            this.comboBox2.TabIndex = 15;
-            this.comboBox2.Text = "Сортировать по ";
+            this.cmbSort.BackColor = System.Drawing.Color.LavenderBlush;
+            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSort.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.cmbSort.FormattingEnabled = true;
+            this.cmbSort.Location = new System.Drawing.Point(521, 541);
+            this.cmbSort.Name = "cmbSort";
+            this.cmbSort.Size = new System.Drawing.Size(271, 49);
+            this.cmbSort.TabIndex = 15;
             // 
-            // button1
+            // btnExcel
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.Crimson;
-            this.button1.Location = new System.Drawing.Point(521, 596);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(333, 52);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Экспорт в Excel";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnExcel.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExcel.ForeColor = System.Drawing.Color.Crimson;
+            this.btnExcel.Location = new System.Drawing.Point(521, 596);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(333, 52);
+            this.btnExcel.TabIndex = 22;
+            this.btnExcel.Text = "Экспорт в Excel";
+            this.btnExcel.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnClose
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.Crimson;
-            this.button2.Location = new System.Drawing.Point(348, 665);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(333, 52);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Выход в меню";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnClose.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.ForeColor = System.Drawing.Color.Crimson;
+            this.btnClose.Location = new System.Drawing.Point(348, 665);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(333, 52);
+            this.btnClose.TabIndex = 23;
+            this.btnClose.Text = "Выход в меню";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox4
             // 
@@ -220,20 +208,19 @@ namespace Flower_shop
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
-            // Order
+            // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.search);
-            this.Controls.Add(this.exit);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnExcel);
+            this.Controls.Add(this.cmbSort);
+            this.Controls.Add(this.cmbFilt);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnSbros);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.VisualUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
@@ -243,9 +230,10 @@ namespace Flower_shop
             this.ForeColor = System.Drawing.Color.Crimson;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(8);
-            this.Name = "Order";
+            this.Name = "SalesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Продажи";
+            this.Load += new System.EventHandler(this.SalesForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -259,15 +247,14 @@ namespace Flower_shop
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label VisualUser;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button exit;
-        private System.Windows.Forms.TextBox search;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button btnSbros;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ComboBox cmbFilt;
+        private System.Windows.Forms.ComboBox cmbSort;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnExcel;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
