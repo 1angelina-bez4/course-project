@@ -74,7 +74,7 @@ namespace Flower_shop
             this.exit.BackColor = System.Drawing.Color.LavenderBlush;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exit.ForeColor = System.Drawing.Color.Crimson;
-            this.exit.Location = new System.Drawing.Point(19, 587);
+            this.exit.Location = new System.Drawing.Point(12, 587);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(271, 56);
             this.exit.TabIndex = 16;
@@ -90,7 +90,7 @@ namespace Flower_shop
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(790, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 33);
+            this.label1.Size = new System.Drawing.Size(204, 41);
             this.label1.TabIndex = 21;
             this.label1.Text = "Текущий чек";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -127,7 +127,7 @@ namespace Flower_shop
             this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Location = new System.Drawing.Point(574, 528);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 33);
+            this.label2.Size = new System.Drawing.Size(281, 41);
             this.label2.TabIndex = 31;
             this.label2.Text = "Сумма без скидки: ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -139,9 +139,9 @@ namespace Flower_shop
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.Location = new System.Drawing.Point(599, 609);
+            this.label5.Location = new System.Drawing.Point(574, 609);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 33);
+            this.label5.Size = new System.Drawing.Size(117, 41);
             this.label5.TabIndex = 33;
             this.label5.Text = "Итого:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -153,9 +153,9 @@ namespace Flower_shop
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.Crimson;
-            this.label6.Location = new System.Drawing.Point(585, 569);
+            this.label6.Location = new System.Drawing.Point(574, 569);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 33);
+            this.label6.Size = new System.Drawing.Size(142, 41);
             this.label6.TabIndex = 35;
             this.label6.Text = "Скидка:  ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -217,7 +217,7 @@ namespace Flower_shop
             this.label4.ForeColor = System.Drawing.Color.Crimson;
             this.label4.Location = new System.Drawing.Point(330, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 33);
+            this.label4.Size = new System.Drawing.Size(142, 41);
             this.label4.TabIndex = 40;
             this.label4.Text = "Товары:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -234,7 +234,7 @@ namespace Flower_shop
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(629, 474);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(296, 41);
+            this.comboBox4.Size = new System.Drawing.Size(296, 49);
             this.comboBox4.TabIndex = 50;
             this.comboBox4.Tag = "";
             this.comboBox4.Text = "Оплата";
@@ -248,7 +248,7 @@ namespace Flower_shop
             this.button3.ForeColor = System.Drawing.Color.Crimson;
             this.button3.Location = new System.Drawing.Point(674, 653);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(328, 56);
+            this.button3.Size = new System.Drawing.Size(328, 61);
             this.button3.TabIndex = 51;
             this.button3.Text = "Оформить покупку";
             this.button3.UseVisualStyleBackColor = false;
@@ -261,9 +261,9 @@ namespace Flower_shop
             this.button5.Enabled = false;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.ForeColor = System.Drawing.Color.Crimson;
-            this.button5.Location = new System.Drawing.Point(469, 653);
+            this.button5.Location = new System.Drawing.Point(469, 648);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(199, 56);
+            this.button5.Size = new System.Drawing.Size(199, 61);
             this.button5.TabIndex = 55;
             this.button5.Text = "Удалить";
             this.button5.UseVisualStyleBackColor = false;
@@ -276,7 +276,7 @@ namespace Flower_shop
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(296, 525);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(272, 41);
+            this.comboBox3.Size = new System.Drawing.Size(272, 49);
             this.comboBox3.TabIndex = 54;
             this.comboBox3.Text = "Фильтрация";
             // 
@@ -310,7 +310,7 @@ namespace Flower_shop
             // 
             // Checkout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1006, 721);

@@ -89,7 +89,7 @@
             this.VisualUser.ForeColor = System.Drawing.Color.Crimson;
             this.VisualUser.Location = new System.Drawing.Point(7, 49);
             this.VisualUser.Name = "VisualUser";
-            this.VisualUser.Size = new System.Drawing.Size(125, 33);
+            this.VisualUser.Size = new System.Drawing.Size(156, 41);
             this.VisualUser.TabIndex = 15;
             this.VisualUser.Text = "Продавец:";
             // 
@@ -101,7 +101,7 @@
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(239, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 33);
+            this.label1.Size = new System.Drawing.Size(100, 41);
             this.label1.TabIndex = 14;
             this.label1.Text = "Меню";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -120,7 +120,7 @@
             // 
             // MenuForSalesman
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(562, 560);
@@ -139,6 +139,7 @@
             this.Name = "MenuForSalesman";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная - Продавец";
+            this.Load += new System.EventHandler(this.MenuForSalesman_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -13,9 +13,10 @@ namespace Flower_shop
     public partial class MenuForMerchandiseSpecialist : Form
     {
         private int userid;
-        public MenuForMerchandiseSpecialist(int userId)
+        public MenuForMerchandiseSpecialist(int userid)
         {
             InitializeComponent();
+            this.userid = userid;
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -37,6 +38,15 @@ namespace Flower_shop
             this.Hide();
             new warehouse().ShowDialog();
             this.Show();
+        }
+        private void LoadNameUsers()
+        {
+            UserInfoHelper.SetUserLabel(VisualUser, userid, "Товаровед");
+        }
+
+        private void MenuForMerchandiseSpecialist_Load(object sender, EventArgs e)
+        {
+            LoadNameUsers();
         }
     }
 }

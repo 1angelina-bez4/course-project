@@ -40,6 +40,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.arrowRight = new System.Windows.Forms.Label();
+            this.arrowRightEnd = new System.Windows.Forms.Label();
+            this.arrowLeft = new System.Windows.Forms.Label();
+            this.arrowLeftEnd = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -76,7 +80,7 @@
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(388, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 33);
+            this.label1.Size = new System.Drawing.Size(278, 41);
             this.label1.TabIndex = 23;
             this.label1.Text = "Просмотр товаров";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -118,7 +122,7 @@
             this.cbSort.FormattingEnabled = true;
             this.cbSort.Location = new System.Drawing.Point(566, 35);
             this.cbSort.Name = "cbSort";
-            this.cbSort.Size = new System.Drawing.Size(213, 41);
+            this.cbSort.Size = new System.Drawing.Size(213, 49);
             this.cbSort.TabIndex = 48;
             this.cbSort.SelectedIndexChanged += new System.EventHandler(this.cbSort_SelectedIndexChanged);
             // 
@@ -131,7 +135,7 @@
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(355, 35);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(205, 41);
+            this.cbCategory.Size = new System.Drawing.Size(205, 49);
             this.cbCategory.TabIndex = 47;
             this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
@@ -173,7 +177,7 @@
             this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Location = new System.Drawing.Point(12, 561);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(242, 33);
+            this.label2.Size = new System.Drawing.Size(304, 41);
             this.label2.TabIndex = 26;
             this.label2.Text = "Количество записей:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -182,20 +186,67 @@
             // 
             this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(12, 602);
+            this.linkLabel1.Location = new System.Drawing.Point(110, 602);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(127, 33);
+            this.linkLabel1.Size = new System.Drawing.Size(158, 41);
             this.linkLabel1.TabIndex = 49;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "linkLabel1";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // arrowRight
+            // 
+            this.arrowRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.arrowRight.AutoSize = true;
+            this.arrowRight.Location = new System.Drawing.Point(260, 602);
+            this.arrowRight.Name = "arrowRight";
+            this.arrowRight.Size = new System.Drawing.Size(37, 41);
+            this.arrowRight.TabIndex = 50;
+            this.arrowRight.Text = ">";
+            this.arrowRight.Click += new System.EventHandler(this.arrowRight_Click);
+            // 
+            // arrowRightEnd
+            // 
+            this.arrowRightEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.arrowRightEnd.AutoSize = true;
+            this.arrowRightEnd.Location = new System.Drawing.Point(293, 602);
+            this.arrowRightEnd.Name = "arrowRightEnd";
+            this.arrowRightEnd.Size = new System.Drawing.Size(56, 41);
+            this.arrowRightEnd.TabIndex = 51;
+            this.arrowRightEnd.Text = ">>";
+            this.arrowRightEnd.Click += new System.EventHandler(this.arrowRightEnd_Click);
+            // 
+            // arrowLeft
+            // 
+            this.arrowLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.arrowLeft.AutoSize = true;
+            this.arrowLeft.Location = new System.Drawing.Point(67, 602);
+            this.arrowLeft.Name = "arrowLeft";
+            this.arrowLeft.Size = new System.Drawing.Size(37, 41);
+            this.arrowLeft.TabIndex = 52;
+            this.arrowLeft.Text = "<";
+            this.arrowLeft.Click += new System.EventHandler(this.arrowLeft_Click);
+            // 
+            // arrowLeftEnd
+            // 
+            this.arrowLeftEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.arrowLeftEnd.AutoSize = true;
+            this.arrowLeftEnd.Location = new System.Drawing.Point(12, 602);
+            this.arrowLeftEnd.Name = "arrowLeftEnd";
+            this.arrowLeftEnd.Size = new System.Drawing.Size(56, 41);
+            this.arrowLeftEnd.TabIndex = 53;
+            this.arrowLeftEnd.Text = "<<";
+            this.arrowLeftEnd.Click += new System.EventHandler(this.arrowLeftEnd_Click);
+            // 
             // ProductViewing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.Controls.Add(this.arrowLeft);
+            this.Controls.Add(this.arrowLeftEnd);
+            this.Controls.Add(this.arrowRight);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cbSort);
@@ -207,6 +258,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.arrowRightEnd);
             this.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.ForeColor = System.Drawing.Color.Crimson;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -236,5 +288,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label arrowRight;
+        private System.Windows.Forms.Label arrowRightEnd;
+        private System.Windows.Forms.Label arrowLeft;
+        private System.Windows.Forms.Label arrowLeftEnd;
     }
 }

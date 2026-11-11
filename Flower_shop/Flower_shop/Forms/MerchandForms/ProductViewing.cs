@@ -32,6 +32,7 @@ namespace Flower_shop
         {
             InitializeComponent();
 
+
             txtSearch.TextChanged -= txtSearch_TextChanged;
             txtSearch.TextChanged += txtSearch_TextChanged;
 
@@ -48,6 +49,20 @@ namespace Flower_shop
             linkLabel1.Height = 30;
             linkLabel1.LinkColor = Color.PaleVioletRed;
             linkLabel1.ActiveLinkColor = Color.Red;
+
+            arrowLeft.Click -= arrowLeft_Click;
+            arrowLeft.Click += arrowLeft_Click;
+
+            arrowRight.Click -= arrowRight_Click;
+            arrowRight.Click += arrowRight_Click;
+
+            arrowLeftEnd.Click -= arrowLeftEnd_Click;
+            arrowLeftEnd.Click += arrowLeftEnd_Click;
+
+            arrowRightEnd.Click -= arrowRightEnd_Click;
+            arrowRightEnd.Click += arrowRightEnd_Click;
+            dataGridView1.DataError += (s, e) => { e.Cancel = true; };
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -134,21 +149,16 @@ namespace Flower_shop
         private void LoadProducts()
         {
             ClassConnection connection = new ClassConnection();
-
             try
             {
                 using (MySqlConnection con = new MySqlConnection(connection.ConnectString))
                 {
                     con.Open();
-
-                    string selectCmd = @"
-                        SELECT 
-                            p.Name AS 'Наименование',
-                            p.Price AS 'Цена',
-                            c.Name AS 'Название категории',
-                            p.Description AS 'Описание'
-                        FROM product p
-                        JOIN categories c ON c.idCategories = p.idCategory;";
+                    // Убедитесь, что в SELECT есть колонка с именем файла, например p.ImageName
+                    string selectCmd = @"SELECT p.Name AS 'Наименование', p.Price AS 'Цена', 
+                                        c.Name AS 'Название категории', p.Description AS 'Описание',
+                                        p.Image AS 'ИмяФайла' 
+                                 FROM product p JOIN categories c ON c.idCategories = p.idCategory;";
 
                     using (MySqlDataAdapter adapter = new MySqlDataAdapter(selectCmd, con))
                     {
@@ -156,29 +166,20 @@ namespace Flower_shop
                         adapter.Fill(productsTable);
                     }
 
-                    //Связь товар категория (для фильтра)
-                    string queryCategories = @"
-                        SELECT DISTINCT
-                            p.Name AS 'Product',
-                            c.Name AS 'Category'
-                        FROM product p
-                        JOIN categories c ON c.idCategories = p.idCategory;";
-
-                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(queryCategories, con))
-                    {
-                        productsWithCategories = new DataTable();
-                        adapter.Fill(productsWithCategories);
-                    }
+                    ImageHelper.LoadImagesToTable(productsTable, "ИмяФайла", "Фото");
 
                     dataGridView1.DataSource = productsTable;
+
                     GridStyle.Apply(dataGridView1);
+
+                    ImageHelper.FormatImageColumn(dataGridView1, "Фото", 100);
+
                     ApplyAll();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка: " + ex.Message,
-                    "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ошибка: " + ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -329,6 +330,8 @@ namespace Flower_shop
             // СТРАНИЦЫ
 
             DisplayPageLinks();
+            UpdateNavigationState();
+
         }
         private void DisplayPageLinks()
         {
@@ -389,6 +392,56 @@ namespace Flower_shop
                 currentPage = page;
                 ApplyAll();
             }
+        }
+
+        private void arrowRight_Click(object sender, EventArgs e)
+        {
+            if (currentPage < totalPages)
+            {
+                currentPage++;
+                ApplyAll();
+            }
+        }
+
+        private void arrowLeft_Click(object sender, EventArgs e)
+        {
+            if (currentPage > 1)
+            {
+                currentPage--;
+                ApplyAll();
+            }
+        }
+
+        private void arrowRightEnd_Click(object sender, EventArgs e)
+        {
+            if (currentPage < totalPages)
+            {
+                currentPage = totalPages;
+                ApplyAll();
+            }
+        }
+
+        private void arrowLeftEnd_Click(object sender, EventArgs e)
+        {
+            if (currentPage > 1)
+            {
+                currentPage = 1;
+                ApplyAll();
+            }
+        }
+        private void UpdateNavigationState()
+        {
+            arrowLeft.Enabled = (currentPage > 1);
+            arrowLeftEnd.Enabled = (currentPage > 1);
+
+            arrowRight.Enabled = (currentPage < totalPages);
+            arrowRightEnd.Enabled = (currentPage < totalPages);
+
+            // Визуальный эффект для неактивных кнопок
+            arrowLeft.ForeColor = arrowLeft.Enabled ? Color.Crimson : Color.PaleVioletRed;
+            arrowLeftEnd.ForeColor = arrowLeftEnd.Enabled ? Color.Crimson : Color.PaleVioletRed;
+            arrowRight.ForeColor = arrowRight.Enabled ? Color.Crimson : Color.PaleVioletRed;
+            arrowRightEnd.ForeColor = arrowRightEnd.Enabled ? Color.Crimson : Color.PaleVioletRed;
         }
     }
 }
